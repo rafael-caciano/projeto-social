@@ -7,7 +7,7 @@ html, body {
 }
 
 main{
-    height: 100vh;
+    height: 98vh;
     position: relative;
     
 }
@@ -26,9 +26,18 @@ body{
 
     height: 662px;
     width: 311px;
-    background-color: blue;
+    
 
     background: url('../imagens/frame-iphone.png') no-repeat;
     background-attachment: fixed;
     background-position: center center;
+}
+
+iframe#tela{
+    position: relative;
+    top: 100px;
+    left: 23px;
+
+    width: 265px;
+    height: 466px;
 }
