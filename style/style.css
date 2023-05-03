@@ -8,7 +8,7 @@ html, body {
 
 main{
     height: 98vh;
-    position: relative;
+    
     
 }
 body{
@@ -28,16 +28,44 @@ body{
     width: 311px;
     
 
-    background: url('../imagens/frame-iphone.png') no-repeat;
+    background: url('../imagens/frame-iphone-peq.png') no-repeat;
     background-attachment: fixed;
     background-position: center center;
 }
 
 iframe#tela{
     position: relative;
-    top: 100px;
-    left: 23px;
+    top: 144px;
+    left: 49px;
 
-    width: 265px;
-    height: 466px;
+    width: 214px;
+    height: 378px;
+    background-size: cover;
 }
+
+section#redes-sociais{
+    position: absolute;
+    top: 25%;
+    left: 85%;
+    text-align: right;
+}
+
+section#redes-sociais img{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    
+    width: 50px;
+    border-radius: 50%;
+    top: 50%;
+    left: 50px;
+    margin: 10px;
+    
+    box-shadow: 0px 3px 5px black;
+}
+
+section#redes-sociais img:hover{
+    
+}
+
+
