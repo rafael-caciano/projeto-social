@@ -15,7 +15,7 @@ body{
     background: url('../imagens/fundo-madeira.jpg') no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    background-position: top center;
+    background-position: center center;
 }
 
 #telefone{
@@ -33,39 +33,42 @@ body{
     background-position: center center;
 }
 
+section#telefone{
+    height: 98vh;
+}
+
 iframe#tela{
     position: relative;
-    top: 144px;
+    top: 112px;
     left: 49px;
 
     width: 214px;
     height: 378px;
     background-size: cover;
+    background-position: center center;
 }
 
 section#redes-sociais{
     position: absolute;
-    top: 25%;
-    left: 85%;
-    text-align: right;
-}
-
-section#redes-sociais img{
     display: flex;
     flex-direction: column;
-    position: relative;
+    justify-content: center;
+    gap: 15px;
+    top: 0%;
+    left: 92%;
+    height: 98%;
     
+}
+
+
+section#redes-sociais img{
     width: 50px;
     border-radius: 50%;
-    top: 50%;
-    left: 50px;
-    margin: 10px;
-    
-    box-shadow: 0px 3px 5px black;
+    transition: 0.3s ease-in-out;
 }
 
 section#redes-sociais img:hover{
-    
+    transform: scale(1.2);  
 }
 
 
