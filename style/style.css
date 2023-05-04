@@ -33,13 +33,11 @@ body{
     background-position: center center;
 }
 
-section#telefone{
-    height: 98vh;
-}
+
 
 iframe#tela{
     position: relative;
-    top: 112px;
+    top: 144px;
     left: 49px;
 
     width: 214px;
