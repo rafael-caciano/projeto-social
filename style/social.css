@@ -1,0 +1,25 @@
+@charset "UTF-8";
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+img{
+    width: 98vw;
+}
+
+a{
+    display: block;
+    background-color: darkred;
+    padding: 20px;
+    color: white;
+    text-align: center;
+    height: 30px;
+    width: 98vw;
+    text-decoration: none;
+}
+
+a:hover{
+    background-color: red;
+    transform: translate(3px, 3px);
+}
