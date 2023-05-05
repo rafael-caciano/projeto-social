@@ -1,25 +1,34 @@
 @charset "UTF-8";
+
 *{
     margin: 0px;
     padding: 0px;
 }
+::-webkit-scrollbar{
+    width: 0px;
+    height: 0px;
+}
+
+html, body{
+    width: 100vw;
+}
 
 img{
-    width: 98vw;
+    width: 100vw;
 }
 
 a{
     display: block;
     background-color: darkred;
-    padding: 20px;
     color: white;
     text-align: center;
-    height: 30px;
-    width: 98vw;
     text-decoration: none;
+    font-weight: bolder;
+    padding: 20px;
+    width: 97vw;
 }
 
 a:hover{
     background-color: red;
-    transform: translate(3px, 3px);
+    transform: translate(3px);
 }
