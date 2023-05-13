@@ -53,6 +53,8 @@ section#redes{
     left: 92%;
     height: 98%;
     
+    transition: width .3s, height .3s;
+    transition-timing-function: ease;
 }
 
 img{
