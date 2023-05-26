@@ -1,45 +1,40 @@
 @charset "UTF-8";
 
-     *{
-        margin: 0px;
-        padding: 0px;
-        font-family: Arial, Helvetica, sans-serif;
-     }
+body, html{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Times New Roman', Times, serif;
+}
 
-     body, html, main{
-        width: 100vw;
-        height: 100vh;
+body{
+    background-color: black
 
-     }
+}
 
+main{
+    background-color: rgb(193, 105, 193);
+    width: 100vw;
+    height: 100vh;
+    position: relative;
 
-    main{
-        background-color: aquamarine;
-    }
+}
 
-    section#telefone{
-        position: relative;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -60%);
-        width: 250px;
-        height: 505px;
-        background: url(../imagens/frame-iphone-peq.png) no-repeat;
+section#telefone{
+    position: absolute;
+    background-color: aqua;
 
-    }
-   
+}
 
-    section#redes{
-        width: 100vw;
-        position: absolute;
-        display: flex;
-        gap: 15px;
-        justify-content: center;
-        top: 84%;
-    }
+section#icones{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-70% , -50%)
+    
 
-    section > a > img{
-        width: 50px;
-        border-radius: 50%;
-    }
-
+}
+img{
+    width: 50px;
+    border-radius: 50%;
+    box-sizing: border-box;
+}
