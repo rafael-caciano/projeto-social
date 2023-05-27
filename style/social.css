@@ -13,6 +13,10 @@ html, body{
     width: 100vw;
 }
 
+video{
+    width: 220px;
+}
+
 img{
     width: 100vw;
 }

@@ -9,23 +9,54 @@
     <link rel="stylesheet" href="style/style.css">
     
 </head>
-<body>
+<body id="elemento">
     <main>
         <section id="telefone">
-
+           <img id="fototelefone" src="./imagens/frame-iphone-peq.png" alt="">  
         </section>
+
+        <img id="sombra" src="./imagens/sombra-telefone02.webp" alt="">
+
+        <iframe src="home.html" frameborder="0" name="tela"></iframe>
         <section id="icones">
-            <a href="#"><img src="./imagens/logo-home.jpg" alt="home"></a>
+            <a href="./home.html" target="tela" onclick="fh()"><img class="icone" src="./imagens/logo-home.jpg" alt="home"></a>
 
-            <a href="#"><img src="./imagens/logo-facebook.jpg" alt="facebook"></a>
+            <a href="./facebook.html" target="tela" onclick="ff()"><img class="icone" src="./imagens/logo-facebook.jpg" alt="facebook"></a>
 
-            <a href="#"><img src="./imagens/logo-youtube.jpg" alt="youtube"></a>
+            <a href="./youtube.html" target="tela" onclick="fy()"><img class="icone" src="./imagens/logo-youtube.jpg" alt="youtube"></a>
 
-            <a href="#"><img src="./imagens/logo-twitter.jpg" alt="twitter"></a>
+            <a href="./twitter.html" target="tela" onclick="ft()"><img class="icone" src="./imagens/logo-twitter.jpg" alt="twitter"></a>
 
-            <a href="#"><img src="./imagens/logo-instagram.jpg" alt="instagram"></a>
+            <a href="./instagram.html" target="tela" onclick="fi()"><img class="icone" src="./imagens/logo-instagram.jpg" alt="instagram"></a>
             
         </section>
+       
+
     </main>
+    <script>
+     let elemento = document.getElementById('elemento')
+        
+        function fh(){
+            elemento.style.backgroundImage = "url(https://images.pexels.com/photos/147413/twitter-facebook-together-exchange-of-information-147413.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2)"
+        }
+
+        function ff() {
+            
+             elemento.style.backgroundImage= "url(https://images.pexels.com/photos/267399/pexels-photo-267399.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2)"; 
+}
+        function fy(){
+            elemento.style.backgroundImage = "url(https://t2.tudocdn.net/618686?w=1920)"
+        }
+
+        function ft(){
+            elemento.style.backgroundImage = "url(https://pbs.twimg.com/ext_tw_video_thumb/1572306993444016128/pu/img/D9iFINxHnlAEIjEG?format=jpg&name=large)"
+        }
+
+        function fi(){
+            elemento.style.backgroundImage = "url(https://static.poder360.com.br/2021/12/instagram-logo.jpg)"
+        }
+
+    
+    </script>
 </body>
 </html>

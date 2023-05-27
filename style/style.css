@@ -6,13 +6,16 @@ body, html{
     font-family: 'Times New Roman', Times, serif;
 }
 
-body{
-    background-color: black
+#elemento{
+    background-image: url(https://images.pexels.com/photos/147413/twitter-facebook-together-exchange-of-information-147413.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
 
 }
 
 main{
-    background-color: rgb(193, 105, 193);
     width: 100vw;
     height: 100vh;
     position: relative;
@@ -21,20 +24,68 @@ main{
 
 section#telefone{
     position: absolute;
-    background-color: aqua;
-
-}
-
-section#icones{
-    position: absolute;
+    
     top: 50%;
     left: 50%;
-    transform: translate(-70% , -50%)
+    transform: translate(-50%, -50%);
     
 
 }
-img{
+
+iframe{
+    position: absolute;
+    width: 215px;
+    height: 380px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+
+img#sombra{
+    display: none;
+    position: absolute;
+    top: 52.4%;
+    left: 50%;
+    transform: translate(-50%, -0%);
+
+}
+
+
+section#icones{
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    display: flex;
+    gap: 10px;
+    
+
+}
+
+img.icone{
     width: 50px;
     border-radius: 50%;
     box-sizing: border-box;
+    box-shadow: 1px 10px 10px rgba(0, 0, 0, 0.6);
+    transition: ease-in-out .3s;
+}
+
+img.icone:hover{
+    transform: scale(1.4);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.6);
+}
+
+@media screen and (min-width: 900px) {
+
+    section#icones{
+        top: 50%;
+        left: 80%;
+        transform: translate(0%,-50%);
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    
 }
